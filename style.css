@@ -1,0 +1,124 @@
+body{
+font-family:Arial;
+margin:0;
+background:#f7f7f7;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:white;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:bold;
+}
+
+.logo img{
+width:35px;
+}
+
+nav ul{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:black;
+}
+
+.hero{
+height:60vh;
+background:url("https://images.unsplash.com/photo-1490645935967-10de6ba17061") center/cover;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero-buttons a{
+background:#ff7a18;
+padding:10px 20px;
+margin:10px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.recipes{
+padding:40px;
+text-align:center;
+}
+
+.recipe-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.recipe-card{
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 6px rgba(0,0,0,0.1);
+}
+
+.recipe-card img{
+width:100%;
+height:160px;
+object-fit:cover;
+}
+
+.recipe-card h3{
+margin:10px;
+}
+
+.recipe-card p{
+margin:5px 10px;
+font-size:14px;
+}
+
+.mission,.inspiration,.contact{
+max-width:800px;
+margin:auto;
+padding:40px;
+}
+
+.contact input,.contact textarea{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+background:#ff7a18;
+color:white;
+border:none;
+padding:10px 20px;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#eee;
+}
+
+.recipe-card{
+cursor:pointer;
+transition:transform 0.2s;
+}
+
+.recipe-card:hover{
+transform:scale(1.22);
+}
